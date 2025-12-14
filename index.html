@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil UMKM - Seblak Mamah Vanda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container nav-container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Seblak Mama Vanda"
+            width="30"
+            height="24"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webinar.html">Webinar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h2>Selamat Datang Di Website Kami</h2>
+        <p>
+          Kami menyediakan berbagai macam toping seblak yang hanya dapat kamu
+          temui di Seblak Mamah Vanda
+        </p>
+      </div>
+    </header>
+
+    <section class="keunggulan">
+      <div class="container">
+        <h2>Kenapa Memilih Kami?</h2>
+        <img src="images/seblak11.jpeg" alt="Seblak Mamah Vanda" width="30%" />
+        <p>
+          UMKM yang menyajikan seblak dengan rasa nikmat dan menggoyangkan lidah
+        </p>
+        <ul class="fitur-list">
+          <li>Toping seblak berkualitas</li>
+          <li>Rasa yang nikmat dan menggoyangkan lidah</li>
+          <li>Toping yang dapat kamu temui hanya di toko seblak</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimoni" id="center">
+      <div class="container">
+        <h2>Testimoni Pelanggan</h2>
+        <div id="testimoni-container" class="card-container">
+          <!-- Testimoni akan dimasukkan otomatis lewat JavaScript -->
+        </div>
+      </div>
+    </section>
+    <!-- alert -->
+    <!-- Toast -->
+    <div
+      class="toast-container position-fixed top-0 end-0 p-3"
+      style="z-index: 9999"
+    >
+      <div
+        id="toast1"
+        class="toast align-items-center text-bg-warning border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Selamat datang di Seblak Mamah Vanda!</div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        id="toast2"
+        class="toast align-items-center text-bg-danger border-0 mt-2"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Nikmati pedasnya seblak khas mamah vanda!
+          </div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- end alert -->
+    <footer>
+      <p>&copy; 2025 Seblak Mama Vanda. Semua hak dilindungi.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // 🔸 Data testimoni pelanggan
+      const testimoni = [
+        {
+          teks: "Rasanya enak dan proses masak cepat!",
+          nama: "Puspa, Mojokerto",
+        },
+        {
+          teks: "Pelayanannya ramah dan cepat tanggap!",
+          nama: "Rina, Surabaya",
+        },
+        {
+          teks: "Harga terjangkau tapi kualitas tetap top!",
+          nama: "Dewi, Malang",
+        },
+        { teks: "Anakku suka banget sama rasanya!", nama: "Sinta, Sidoarjo" },
+        {
+          teks: "Sudah langganan, nggak pernah mengecewakan!",
+          nama: "Lina, Gresik",
+        },
+      ];
+
+      // 🔸 Ambil container untuk menampung semua testimoni
+      const testimoniContainer = document.getElementById("testimoni-container");
+
+      // 🔸 Loop untuk menambahkan 5 testimoni
+      testimoni.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+      <p>"${item.teks}"</p>
+      <small>${item.nama}</small>
+    `;
+
+        testimoniContainer.appendChild(card);
+      });
+      window.onload = function () {
+        const toast1 = new bootstrap.Toast(document.getElementById("toast1"));
+        const toast2 = new bootstrap.Toast(document.getElementById("toast2"));
+
+        toast1.show();
+
+        setTimeout(() => {
+          toast2.show();
+        }, 1500);
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
