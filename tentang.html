@@ -3,16 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil UMKM - Seblak Mamah Vanda</title>
+    <title>Tentang Kami | Seblak Mamah Vanda</title>
+
+    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* CONTENT BOX */
+      /* ===== PERAPIAN KONTEN TENTANG ===== */
+      .content-box {
+        background: #fff;
+        padding: 35px 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        color: #333;
+      }
+
+      /* Judul tetap di tengah */
+      .content-box h4,
+      .content-box h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Paragraf rapi & tidak center */
+      .content-box p {
+        text-align: justify;
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      /* List toping rapi ke kiri */
+      .content-box ul {
+        padding-left: 20px;
+        text-align: left;
+      }
+
+      .content-box ul li {
+        margin-bottom: 8px;
+      }
+
+      /* Box proses (yang bawah) */
+      .proses-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        margin-top: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        color: #333;
+      }
+
+      /* Judul proses */
+      .proses-box h3 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      /* List proses */
+      .proses-box ol {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .proses-box ol li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+      }
+
+      footer {
+        background-color: var(--merah);
+        color: #fff;
+        text-align: center;
+        padding: 16px 0;
+      }
+
+      /* Bikin kolom sejajar & tinggi sama */
+      .baris {
+        display: flex;
+        gap: 30px;
+        align-items: stretch; /* 🔥 ini kuncinya */
+      }
+
+      /* Kolom fleksibel */
+      .colom-md-6 {
+        flex: 1;
+        display: flex;
+      }
+    </style>
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
       <div class="container nav-container">
         <a class="navbar-brand" href="#">
@@ -61,58 +147,88 @@
       </div>
     </nav>
 
-    <main>
-      <p class="mt-4">
-        Seblak Mamah Vanda adalah usaha kuliner menyajikan seblak dengan konsep
-        prasmanan, memungkinkan pelanggan untuk memilih berbagai toping sesuai
-        selera mereka.
-      </p>
-      <h2>Selamat Datang di Website Kami</h2>
-      <p>
-        Kami menyediakan lebih dari 20 toping yang akan menggiurkan lidah Anda.
-      </p>
+    <!-- HERO -->
+    <section class="hero text-center">
+      <div class="container">
+        <p class="fw-light mb-3">
+          Seblak Mamah Vanda adalah usaha kuliner yang menyajikan seblak dengan
+          konsep prasmanan, memberikan kebebasan kepada pelanggan untuk memilih
+          berbagai toping sesuai selera.
+        </p>
 
-      <h2>Profil Usaha Kami</h2>
-      <p>
-        Kami berdiri sejak tahun 2024, siap menjadi pelopor bisnis seblak
-        se-Pemalang
-      </p>
-      <h3>Toping besseller:</h3>
-      <ul>
-        <li>Dumpling Ayam</li>
-        <li>Sosis Sapi Besar</li>
-        <li>Aneka Macam Kerupuk</li>
-        <li>DLL.</li>
-      </ul>
+        <h1 class="fw-bold mb-4">Selamat Datang di Website Kami</h1>
 
-      <h3>Pembuatan Langsung Dari Tangan Mamah Vanda:</h3>
-      <ol>
-        <li>Pelanggan memilih langsung toping yang disukai</li>
-        <li>Pelanggan menyerahkan kepada kasir untuk dihitung</li>
-        <li>Kasir menyerahkan pesanan kepada mamah vanda</li>
-        <li>Mamah vanda memasak seblak sesuai pesanan</li>
-        <li>Pelanggan menunggu pesanan hingga selesai</li>
-        <li>Pelanggan menikmati seblak dengan toping favoritnya</li>
-        <li>Pelanggan membayar sesuai harga yang tertera</li>
-        <li>Pelanggan pulang dengan hati senang dan perut kenyang</li>
-      </ol>
+        <p class="lead">
+          Kami menyediakan lebih dari 20 toping pilihan yang siap menggoyang
+          lidah Anda dengan cita rasa khas rumahan.
+        </p>
+      </div>
+    </section>
 
-      <h3>Kunjungi Kami:</h3>
-      <p>
-        <a href="https://instagram.com/SeblakMamahVanda" target="_blank"
-          >Instagram Seblak Mamah Vanda</a
-        >
-      </p>
+    <!-- CONTENT -->
+    <main class="container my-5">
+      <div class="baris g-4">
+        <!-- PROFIL USAHA -->
+        <div class="colom-md-6">
+          <div class="content-box">
+            <h4 class="fw-bold mb-3">Profil Usaha</h4>
+            <p>
+              Berdiri sejak tahun 2024, Seblak Mamah Vanda hadir sebagai pelopor
+              seblak prasmanan di Pemalang. Kami mengutamakan rasa, kebersihan,
+              dan kepuasan pelanggan dalam setiap sajian.
+            </p>
+            <p>
+              Semua menu dimasak langsung oleh Mamah Vanda dengan bumbu racikan
+              khas yang membuat rasa seblak semakin nikmat dan autentik.
+            </p>
+          </div>
+        </div>
+
+        <!-- TOPING -->
+        <div class="colom-md-6">
+          <div class="content-box">
+            <h4 class="fw-bold mb-3">Toping Best Seller</h4>
+            <ul>
+              <li>Dumpling Ayam</li>
+              <li>Sosis Sapi Besar</li>
+              <li>Aneka Macam Kerupuk</li>
+              <li>Ceker Ayam</li>
+              <li>Bakso dan Sayuran Segar</li>
+            </ul>
+            <p class="mt-2">
+              Dan masih banyak pilihan toping lainnya yang bisa Anda
+              kombinasikan sesuai selera.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROSES -->
+      <div class="proses-box mt-5">
+        <h4 class="fw-bold mb-3 text-center">
+          Proses Pembuatan Langsung oleh Mamah Vanda
+        </h4>
+        <ol>
+          <li>Pelanggan memilih toping favorit secara prasmanan</li>
+          <li>Toping diserahkan ke kasir untuk dihitung</li>
+          <li>Pesanan diteruskan ke dapur</li>
+          <li>Seblak dimasak langsung sesuai pesanan</li>
+          <li>Pelanggan menikmati seblak hangat dengan cita rasa khas</li>
+        </ol>
+      </div>
+
+      <!-- BUTTON -->
+      <div class="text-center mt-5">
+        <a href="produk.html" class="btn btn-warning">Lihat Produk</a>
+      </div>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-      <p>&copy; 2025 Seblak Mamah Vanda. Semua hak dilindungi.</p>
+      <p class="mb-0">&copy; 2025 Seblak Mamah Vanda. Semua hak dilindungi.</p>
     </footer>
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

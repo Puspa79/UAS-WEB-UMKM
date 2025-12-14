@@ -189,63 +189,6 @@ img {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-/* Card Container */
-/* .card {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #ff512f;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  transition: 0.3s;
-  heigth: 500px;
-  width: calc(33.33% - 40px);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 235, 59, 0.3);
-}
-
-.card img {
-  width: 100%;
-  height: 40%; 
-  object-fit: cover; 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-} */
-
-/* Galeri Grid */
-
-/* .galeri {
-  display: grid;
-  grid-template-columns: repeat(auto -fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-} */
-
-/* .galeri {
-  display: flex;
-  flex-warp: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.barisan {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card img {
-  width: 400px;
-  height: auto;
-  border-bottom: 10px solid #ffeb3b;
-} */
-
 /* ===== Struktur Galeri ===== */
 .galeri {
   padding: 20px;
