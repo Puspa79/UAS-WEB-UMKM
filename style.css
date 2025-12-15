@@ -214,18 +214,6 @@ img {
   justify-content: center; /* pastikan isi di tengah */
 }
 
-/* .card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 15px;
-  max-width: 350px;
-  max-height: 370px;
-} */
-
 .card-audio-video {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -573,15 +561,6 @@ textarea {
   gap: 15px;
   margin-top: 10px;
 }
-
-/* .btn {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-} */
 
 .kirim {
   background-color: #fff;
